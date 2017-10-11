@@ -1,10 +1,9 @@
 # Pure CSS Responsive Carousel
 
-An Amazing, Lightweight, Pure CSS based Fully Responsive Carousel for angular 4 and has no jQuery dependency.
-It have multiple options to control the carousel and also it is very simple to get started. 
+A Lightweight, Pure CSS based Fully Responsive Carousel in AngularJS 4 that has no Javascript/jQuery dependency. It has multiple options to control the carousel and also it is very simple to get started. 
 
-This is responsive and asynchronous carousel using Angular 4, Type script, HTML5 and CSS3.
-It is an fully responsive carousel component with full controls which loads its content via HTTP service asynchronously. It play automatically (autoplay) with given interval as well as with user navigation.
+This is responsive and asynchronous carousel using AngularJS 4, Type script, HTML5 and CSS3.
+It is fully responsive carousel component with all controls which loads its content via HTTP service asynchronously. It plays automatically (autoplay) with given interval as well as with user navigation.
 
 # Technology Stack
 
@@ -18,8 +17,6 @@ Repository Tools - Git, GitHub
 ## Static Code - PureCSSResponsiveCarosuel
 I have also created the HTML version of the carousel with pure CSS without using any JavaScript or jquery.
 It is placed in folder `PureCSSResponsiveCarosuel` in project directory.
-
-Go and try this angular 4 respoincive carousel.
 
 ## Components
 
