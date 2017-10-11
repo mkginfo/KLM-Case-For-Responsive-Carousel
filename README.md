@@ -10,7 +10,7 @@ It is an fully responsive carousel component with full controls which loads its 
 
 Web Languages - HTML5, CSS3, Javascript, Angular 4, Angular CLI, NPM, Typescript
 
-Testing Frameworks- Protactor, Karma, Jasmine 
+Testing Frameworks- Protractor, Karma, Jasmine 
 
 Repository Tools - Git, GitHub
 
