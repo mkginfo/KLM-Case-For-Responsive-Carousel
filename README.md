@@ -8,8 +8,10 @@ It is an fully responsive carousel component with full controls which loads its 
 
 # Technology Stack
 
-Web Languages - HTML5, CSS3, Javascript, Angular 4, Angular CLI, NPM, Typescript, 
-Testing Frameworks- Protactor, Karma, 
+Web Languages - HTML5, CSS3, Javascript, Angular 4, Angular CLI, NPM, Typescript
+
+Testing Frameworks- Protactor, Karma, Jasmine 
+
 Repository Tools - Git, GitHub
 
 
@@ -26,15 +28,15 @@ Go and try this angular 4 respoincive carousel.
 
 # Screenshot
 
-"Desktop 1024px"
+Desktop 1024px - 
 
 ![](https://raw.githubusercontent.com/mkginfo/KLM-Case-For-Responsive-Carousel/master/screenshot/1024.PNG "Desktop 1024px")
 
-"Tablet 768px"
+Tablet 768px - 
 
 ![](https://raw.githubusercontent.com/mkginfo/KLM-Case-For-Responsive-Carousel/master/screenshot/768.PNG "Tablet 768px")
 
-"Mobile 320px"
+Mobile 320px -
 
 ![](https://raw.githubusercontent.com/mkginfo/KLM-Case-For-Responsive-Carousel/master/screenshot/320.PNG "Mobile 320px")
 
