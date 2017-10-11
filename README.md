@@ -25,7 +25,7 @@ Go and try this angular 4 respoincive carousel.
 
 1) Responsive Carousel with controls
 2) Responsive Menubar
-
+3) Web Fonts - 'Open sans'
 # Screenshot
 
 Desktop 1024px - 
