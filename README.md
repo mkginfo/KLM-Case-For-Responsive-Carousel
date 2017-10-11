@@ -72,13 +72,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 # Documentation
 
-## Rssponsive Menubar Style
+## Responsive Menubar Style
 
 ```html
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 ```
 
-## Rssponsive Carousel HTML
+## Responsive Carousel HTML
 
 ```html
 <nav>
@@ -98,7 +98,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 </nav>
 ```
 
-## Rssponsive Carousel Style
+## Responsive Carousel Style
 
 ```html
 <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
