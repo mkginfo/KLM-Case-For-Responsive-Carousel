@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pure CSS - Responsive Carosel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico"/>
+    <!--<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="brand"> </div>
+        <div class="sub-menu mobile-visibility-hidden">
+            <div class="sub-menu-links">
+				<span><span class="user"></span> Inloggen</span> |
+				<span>Registeren</span> |
+				<span><span class="flag"></span> Netherlands</span>
+            </div>
+
+            <input type="search" placeholder="Stel uw vraag" class="search"/>
+        </div>
+    </header>
+    <nav>
+        <label for="show-menu" class="show-menu">&#9776;</label>
+        <label class="show-menu flag mobile-visibility-hidden"></label>        
+        <label class="show-menu user mobile-visibility-hidden"></label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Plan en boek</a></li>
+            <li><a href="#">Bereid uw reis voor</a></li>
+            <li><a href="#">Flying Blue</a></li>
+            <li><a href="#">KLM zakelijk</a></li>
+            <li><a href="#">Over KLM</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="slide">
+        <div class="mobile-serach">
+            <strong>Plan en boek</strong>
+            <input type="search" placeholder="Stel uw vraag" class="search"/>
+        </div>
+        <div class="blocktext mobile-visibility-hidden">
+            <div class="city">Afrika</div>
+            <div>
+                <spna class="subcity">Retour vanaf</spna> 
+                <span class="currency">EUR</span>
+                <span class="price">1179</span>
+                <span class="arrow">></span>
+            </div>
+            <div class="notes">
+                <ul>
+                    <li>Plus € 10 boekingskosten </li>
+                    <li>v.a. Amsterdam, Schiphol (AMS)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="placeholder mobile-visibility-hidden"><img src="./assets/carousel/static.png"></div>
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="./assets/carousel/home1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./assets/carousel/home2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./assets/carousel/home3.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./assets/carousel/home4.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./assets/carousel/home5.jpg">
+            </div>
+            <label for="slide-5" class="slide-control prev control-1">&#10094;</label>
+            <label for="slide-2" class="slide-control next control-1">&#10095;</label>
+            <label for="slide-1" class="slide-control prev control-2">&#10094;</label>
+            <label for="slide-3" class="slide-control next control-2">&#10095;</label>
+            <label for="slide-2" class="slide-control prev control-3">&#10094;</label>
+            <label for="slide-4" class="slide-control next control-3">&#10095;</label>
+            <label for="slide-3" class="slide-control prev control-4">&#10094;</label>
+            <label for="slide-5" class="slide-control next control-4">&#10095;</label>
+            <label for="slide-4" class="slide-control prev control-5">&#10094;</label>
+            <label for="slide-1" class="slide-control next control-5">&#10095;</label>
+            <ol class="slide-indicators">
+                <li>
+                    <label for="slide-1" class="slide-bullet">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-bullet">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-bullet">•</label>
+                </li>
+                <li>
+                    <label for="slide-4" class="slide-bullet">•</label>
+                </li>
+                <li>
+                    <label for="slide-5" class="slide-bullet">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+.slide {
+    position: relative;
+    margin-top: 26px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.slide-control {
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5 {
+    display: block;
+}
+
+.slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 8%;
+  right: 25px;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid #bee0fc;
+  border-radius: 15px;
+  height: 15px;
+}
+
+.slide-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 46px;
+  height: 15px;
+  margin-top: -19px;
+}
+
+.slide-bullet:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicators li:nth-child(1) .slide-bullet,
+#slide-2:checked ~ .control-2 ~ .slide-indicators li:nth-child(2) .slide-bullet,
+#slide-3:checked ~ .control-3 ~ .slide-indicators li:nth-child(3) .slide-bullet,
+#slide-4:checked ~ .control-4 ~ .slide-indicators li:nth-child(4) .slide-bullet,
+#slide-5:checked ~ .control-5 ~ .slide-indicators li:nth-child(5) .slide-bullet {
+    color: #428bca;
+}
+
+
+/*
+@media screen and (min-width: 769px) {
+  ol.slide-indicators {
+    display: none;
+  }
+  div.slide-inner:hover > ol.slide-indicators {
+    display: block;
+  }
+}*/
+
+.placeholder {
+  z-index:30;
+}
+
+@media screen and (min-width: 1025px) {
+  .placeholder {
+    position: absolute;
+    top: 100px;
+    display: inline-block;
+    width: 300px;
+    left: 100px;
+  } 
+  .placeholder img {
+    box-shadow: 2px 2px 1px #888888;
+    /*width: 300px;*/
+  }
+}
+
+
+@media screen and (min-width: 769px)  and (max-width: 1024px) {
+  .placeholder {
+    position: absolute;
+    top: 100px;
+    display: inline-block;
+    width: 300px;
+    left: 100px;
+  } 
+  .placeholder img {
+    box-shadow: 2px 2px 1px #888888;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 321px) {
+  .placeholder {
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    left: 100px;
+    display: inline-block;
+  }
+  .placeholder img {
+    width: 200px;
+    box-shadow: 2px 2px 1px #888888;
+
+  }
+}
+
+
+@media screen and (max-width: 321px) {
+  .slide-indicators{
+    pointer-events:none;
+  }
+  .blocktext, .placeholder{
+    display: none;
+  }
+}

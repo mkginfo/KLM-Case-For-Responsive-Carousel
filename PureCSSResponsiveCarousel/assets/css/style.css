@@ -1,0 +1,280 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/open-sans/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/open-sans/OpenSans-Regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/open-sans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/open-sans/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+html, body {
+    margin: 0px;
+	padding: 0px;
+	font-family: 'OpenSans', sans-serif;
+}
+
+.mobile-serach{
+	display: none;
+}
+
+.brand{
+	background: url("../KLM-Logo.png");
+	width: 325px;
+	height: 75px;
+  	display: inline-block;
+  	margin-left: 20px;
+}
+.sub-menu{
+  	padding: 25px 20px;
+  	float: right;
+  	color: #00a1de;
+}
+.sub-menu-links span{
+	margin: 5px;
+}
+.sub-menu-links .user{
+	background: url(../user_icon.png) no-repeat center center;
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+    margin: 0;
+}
+
+.sub-menu-links .flag{
+	background: url(../Netherlands-Flag.png) no-repeat center center;
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+    margin: 0;
+}
+
+.sub-menu .search{
+	background: url(../search.png) no-repeat 5px 4px;
+    margin: 10px 5px;
+    border-radius: 3px;
+    padding: 5px 0px 5px 24px;
+    float: right;
+    width: 155px;
+}
+.blocktext {
+	position: absolute;
+	z-index: 10;
+	right: 24px;
+	top: 0;
+	width:250px;
+	color: rgba(0,49,69,0.85);
+	padding: 12px 12px 12px 12px;
+	background: white;
+	box-shadow: 2px 2px 1px #888888;
+	-webkit-transition: background 0.15s ease-in-out;
+	-moz-transition: background 0.15s ease-in-out;
+	-o-transition: background 0.15s ease-in-out;
+	-ms-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+  }
+  
+  .blocktext .city{
+	font-size: 17px;font-weight: 700;
+  }
+  .blocktext .subcity{
+	font-size: 13px;
+  }
+  .blocktext .currency{
+	font-size: 20px;color: #00a1de;margin-left: 10px;
+  }
+  .blocktext .price{
+	font-size: 28px;vertical-align: middle;color: #00a1de;
+  }
+  .blocktext .arrow{
+	font-weight: 700;color: #00a1de;
+  }
+  .blocktext .notes{
+	height: 30px;
+  }
+  .blocktext .notes ul{
+	font-size: 13px;list-style: circle;color: #b5b2b2;
+  }
+
+nav{
+	height: 20px;
+    border-top: 1px;
+    border-top-color: #00a1de;
+    border-top-style: solid;
+    margin: 10px 25px;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+	display: block;
+    height: 45px;
+    line-height: 45px;
+    color: #00a1de;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #00a1de;
+	color: #ffffff;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #00a1de;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 660px){
+	.mobile-visibility-hidden{
+		display: none;
+	}
+
+	.mobile-visibility{
+		display: block;
+	}
+
+	.brand{
+		background: url("../KLM-Logo-mobile.png");
+		width: 110px;
+		height: 75px;
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	header{
+		display: inline;
+	}
+
+	nav{
+		border: 0;
+		display: inline;
+	}
+
+	nav .user{
+		background: url(../user_icon.png) no-repeat center center;
+		height: 18px;
+		width: 14px;
+		border: 1px solid #00a1de;
+	}
+
+	nav .flag{
+		background: url(../Netherlands-Flag.png) no-repeat center center;
+		height: 18px;
+		width: 14px;
+		border: 1px solid #00a1de;
+	}
+
+	.mobile-serach{
+		display: inline-block;
+		position: relative;
+		padding: 14px 0;
+		width: 100%;
+		background-color: #00a1de;
+		color: #ffffff;
+		z-index: 1;
+	}
+	.mobile-serach strong{
+		padding-left:10px 
+	}
+	.mobile-serach .search{
+		width: 95.5%;
+		padding: 7px 0;
+		margin: 10px;
+	}
+
+	/*Make dropdown links appear inline*/
+	ul#menu {
+		position: static;
+		display: none;
+		background-color: #fff;
+		z-index: 10;
+	}
+	/*Create vertical spacing*/
+	#menu li {
+		margin-bottom: 1px;
+		padding: 0 10px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+		float: right;
+		padding: 10px;
+		margin: 25px 10px;
+	}
+}
