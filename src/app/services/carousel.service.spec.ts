@@ -14,4 +14,18 @@ describe('SlideService', () => {
   it('should be created', inject([CarouselService], (service: CarouselService) => {
     expect(service).toBeTruthy();
   }));
+
+  it('should return an Observable<Array<Video>>',
+  inject([CarouselService], (carouselService) => {
+
+    carouselService.fetchCarouselData().subscribe((Carousel) => {
+      expect(Carousel.length).toBe(5);
+      expect(Carousel[0].title).toEqual('Afrika');
+      expect(Carousel[1].title).toEqual('India');
+      expect(Carousel[2].title).toEqual('USA');
+      expect(Carousel[3].title).toEqual('Shri Lanka');
+      expect(Carousel[4].title).toEqual('Japan');
+    });
+}));
+
 });
