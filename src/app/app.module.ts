@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { SlideService } from './services/slide.service';
+import { CarouselService } from './services/carousel.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { SlideService } from './services/slide.service';
     BrowserModule,
     HttpModule
   ],
-  providers: [SlideService],
+  providers: [CarouselService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

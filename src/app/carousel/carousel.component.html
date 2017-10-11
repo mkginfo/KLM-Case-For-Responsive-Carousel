@@ -1,8 +1,8 @@
 <div class="slideshow-container" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
 
   <button class="toggle" (click)="toggleAuto()" >
-    <span *ngIf="autoPlay"> pause </span>
-    <span *ngIf="!autoPlay"> play </span>
+    <span *ngIf="autoPlay"> || </span>
+    <span *ngIf="!autoPlay"> > </span>
   </button>
   <div class="mySlides fade" >
       <div class="mobile-serach">
@@ -33,7 +33,7 @@
 	  <a class="next" (click)="nextSlides()">&#10095;</a>
 
 	  <p class="bullet">
-		<span class="dot" [ngClass]="{'active': slideIndex === i}" (click)="currentSlide(i)" *ngFor="let item of slidesData; let i = index"></span>
+		<span class="dot" [ngClass]="{'active': slideIndex === i+1}" (click)="currentSlide(i)" *ngFor="let item of slidesData; let i = index"></span>
 	  </p>
   </div>
 </div>

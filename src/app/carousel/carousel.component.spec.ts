@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpModule } from '@angular/http';
 
 import { CarouselComponent } from './carousel.component';
-import { SlideService } from '../services/slide.service';
+import { CarouselService } from '../services/carousel.service';
 
 
 describe('CarouselComponent', () => {
@@ -13,7 +13,7 @@ describe('CarouselComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ CarouselComponent ],
       imports: [HttpModule],
-      providers: [SlideService],
+      providers: [CarouselService],
     })
     .compileComponents();
   }));

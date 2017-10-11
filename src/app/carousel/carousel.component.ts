@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Input, OnInit, HostListener} from '@angular/core';
-import { SlideService } from '../services/slide.service';
+import { CarouselService } from '../services/carousel.service';
 
 @Component({
   selector: 'app-carousel',
@@ -7,13 +7,13 @@ import { SlideService } from '../services/slide.service';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements AfterViewInit, OnInit {
-  slidesData: any;
-  slideIndex = 0;
   current = {};
   autoPlay = true;
   intervalTime = 2000;
   interval: any;
-  controlsVisible = 'hidden';
+  controlsVisible = 'visible';
+  slidesData: any;
+  slideIndex = 0;
 
   /**
    * Listen to the window resize event and set the visiblity of controls
@@ -28,7 +28,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     }
 
   }
-  constructor(private slideService: SlideService) {
+  constructor(private carouselService: CarouselService) {
 
   }
 
@@ -45,7 +45,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
    * Fetch data from the service and start the slice show
    */
   ngAfterViewInit() {
-     this.slideService.fetchSlideData()
+     this.carouselService.fetchCarouselData()
      .subscribe(data => {
         this.slidesData = data;
         // this.current = this.slidesData[this.slideIndex];
@@ -126,7 +126,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     if (window.innerWidth < 769) {
       return;
     }
-    this.controlsVisible = 'visible';
+    //this.controlsVisible = 'visible';
   }
 
    /**
@@ -136,7 +136,7 @@ export class CarouselComponent implements AfterViewInit, OnInit {
     if (window.innerWidth < 769) {
       return;
     }
-    this.controlsVisible = 'hidden';
+    //this.controlsVisible = 'hidden';
   }
 
 }
