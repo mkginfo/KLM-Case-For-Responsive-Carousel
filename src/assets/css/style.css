@@ -278,7 +278,8 @@ input[type=checkbox]:checked ~ #menu{
 		margin: 25px 10px;
 	}
 }
-@media screen and (max-width : 320px){
+
+@media screen and (max-width : 480px){
 	/*Display 'show menu' link*/
 	.show-menu {
 		margin: 25px 6px;
