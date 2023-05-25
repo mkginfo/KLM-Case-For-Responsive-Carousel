@@ -42,7 +42,7 @@ Mobile 320px -
 
 ## Clone the git repository
 
-Run `git clone git@github.com:kingmahendra/KLM-Case-Assignment.git` command
+Run `git clone https://github.com/mkginfo/KLM-Case-For-Responsive-Carousel.git` command
 
 ## Install Node Dependencies
 
